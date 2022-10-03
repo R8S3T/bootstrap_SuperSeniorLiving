@@ -1,0 +1,163 @@
+body {
+    background-color: bisque;
+}
+
+/* Top Section with Nav Bar */
+
+.logo {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.navbar-custom {
+    background-color: #ff8351;
+}
+
+.nav-item {
+    font-size: 1.8em;
+    padding: 15px;
+    float: right;
+}
+
+/* Middle Section */
+
+.container .middle {
+    margin-bottom: 90px;
+}
+.middle-section {
+    background-color: #ffa382;
+}
+
+.discover {
+    padding-bottom: 150px;
+}
+
+/* Text 1st row and animation*/
+
+.wrapper {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.wrapper-text {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 0.25rem;
+    opacity: 0;
+    animation: ani2 0.5s ease-out forwards;
+}
+
+.wrapper-text h2,
+.wrapper-text p,
+.wrapper-text h3 {
+    text-align: center;
+    opacity: 0;
+    margin: 0;
+}
+
+.wrapper-text h2 {
+    font-size: 3em;
+    padding: 10px;
+    letter-spacing: 5px;
+    animation: ani2 0.15s ease-out 2s forwards;
+}
+
+.wrapper-text p {
+    font-size: 20px;
+    animation: ani2 0.15s ease-out 3.5s forwards;
+}
+
+.wrapper-text h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: -50px;
+    animation: ani2 0.15s ease-out 5.5s forwards;
+}
+
+@keyframes ani2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.img-arrow {
+    height: 80px;
+    width: 80px;
+}
+
+@keyframes slide-in-img {
+    from {
+        transform: translateX(-20%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.residence h4 p{
+    margin: 50px;
+    text-align: left;
+    display: inline-block;
+}
+.h4 {
+        padding: 0 50px 0 50px;
+}
+
+.residence img {
+    height: 50px;
+    margin-left: 50px;
+    animation: slide-in-img 2s;
+}
+
+
+.img2 {
+    height: 170px;
+    margin-right: 40px;
+    margin-top: 70px;
+}
+
+p {
+    padding: 0 50px 0 50px;
+    text-align: justify;
+    display: inline-block;
+}
+.col {
+    padding-top: 70px;
+}
+
+/*Footer Section*/
+#footer-section {
+    background-color: #ff8351;
+}
+
+#icon {
+    font-size: 4em;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+#icon ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 20px 0 0 140px;
+    overflow: hidden;
+}
+
+#icon li {
+    float: left;
+    padding-right: 220px;
+}
