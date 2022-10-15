@@ -89,22 +89,32 @@ h1 {
     }
 }
 
-.fade-in-arrow {
+/* Find out more animation*/
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { 
+        visibility: visible;
+        opacity: 1; }
+  }
+
+.col-3 {
+    padding-left: 150px;
+    padding-bottom: -50px;
+    animation: fadeIn 5s forwards;
+    animation-delay: 5s;
+    visibility: hidden;
+}
+
+.col-3 img {
     height: 80px;
     width: 80px;
     text-align: right;
     margin-left: 30px;
-    animation: fadeIn ease-in 10s forwards;
 }
-.fade-in-text {
+.col-3 h5 {
     margin-left: 30px;
-    animation: fadeIn ease-in 10s forwards;
 }
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    50% { opacity: 1;}
-    100% { opacity: 1; }
-  }
 
 /*Mid-Section*/
 
@@ -112,6 +122,9 @@ h1 {
     background-color: #ffa382;
 }
 
+.residence {
+    padding-bottom: 120px;
+}
 .residence-txt {
     font-size: 1.5em;
     padding: 90px 50px 0 50px;
@@ -133,6 +146,22 @@ h1 {
     height: 100% !important;
     object-fit: cover;
 }
+
+.residents {
+    margin-top: 200px;
+}
+
+.residents h4 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.card {
+    background-color: #ffebbb;
+    border: none;
+    margin-left: 60px;
+}
+
 
 /*Footer Section*/
 #footer-section {
