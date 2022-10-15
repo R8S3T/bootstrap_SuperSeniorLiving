@@ -2,17 +2,17 @@ body {
     background-color: bisque;
 }
 
-/* Top Section with Nav Bar */
+/* Head Section with Nav Bar */
 
 .logo {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     padding: 15px;
     border-radius: 30px;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     padding-top: 20px;
 }
@@ -22,32 +22,119 @@ h1 {
 }
 
 .nav-item {
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 15px;
     float: right;
 }
 
-/* Middle Section */
+/* Top Section */
 
-.container #middle {
-    margin-bottom: 70px;
+.col .one {
+    margin-top: 100px;
 }
-.middle-section {
+.top-section {
+    background-color: #ffa382;
+    padding-bottom: 100px;
+}
+
+#section-one {
+    padding-bottom: 100px;
+}
+/* Wrapper Section */
+
+.wrapper {
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.wrapper-text {
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: ani1 0.5s ease-out forwards;
+}
+.wrapper-text h2,
+.wrapper-text p {
+    opacity: 0;
+    margin: 0;
+}
+.wrapper-text h2 {
+    margin-bottom: 10px;
+    animation: ani1 0.75s ease-in 2s forwards;
+}
+.wrapper-text p {
+    animation: ani1 0.75s ease-in 2.5s forwards;
+}
+@keyframes ani1 {
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Image animation*/
+.img0 {
+    text-align: center;
+    margin: 20px;
+    animation: slide-in-img 3s;
+}
+@keyframes slide-in-img {
+    from {
+        transform: translateX(-10%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+/* Find out more animation*/
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { 
+        visibility: visible;
+        opacity: 1; }
+  }
+
+.col-3 {
+    padding-left: 150px;
+    padding-bottom: -50px;
+    animation: fadeIn 5s forwards;
+    animation-delay: 5s;
+    visibility: hidden;
+}
+
+.col-3 img {
+    height: 80px;
+    width: 80px;
+    text-align: right;
+    margin-left: 30px;
+}
+.col-3 h5 {
+    margin-left: 30px;
+}
+
+/*Mid-Section*/
+
+.mid-section {
     background-color: #ffa382;
 }
 
-h2 {
+.residence {
+    padding-bottom: 120px;
+}
+.residence-txt {
     font-size: 1.5em;
-    padding: 0 50px 0 50px;
-    text-align: justify;
+    padding: 90px 50px 0 50px;
+    text-align: center;
 }
 /* carousel */
-#carouselExampleCaptions {
-    padding: 70px 0 50px 0;
-}
+
 .carousel-item {
-    height:200px;
-    padding-right: 75px;
+    height:250px;
+    width: 400px;
 }
 
 .carousel-item img {
@@ -56,29 +143,21 @@ h2 {
     object-fit: cover;
 }
 
-.row {
-    padding-bottom: 30px;
-}
-.img1 {
-    height: 170px;
-    margin-left: 50px;
-    margin-top: 70px;
+.residents {
+    margin-top: 200px;
 }
 
-.img2 {
-    height: 170px;
-    margin-right: 40px;
-    margin-top: 70px;
+.residents h4 {
+    text-align: center;
+    padding-bottom: 50px;
 }
 
-p {
-    padding: 0 50px 0 50px;
-    text-align: justify;
-    display: inline-block;
+.card {
+    background-color: #ffebbb;
+    border: none;
+    margin-left: 60px;
 }
-.col {
-    padding-top: 70px;
-}
+
 
 /*Footer Section*/
 #footer-section {
